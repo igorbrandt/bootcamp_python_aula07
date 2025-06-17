@@ -30,7 +30,23 @@ print(converter_graus_celcius_para_fahrenheit(30))
 
 ### 5. Calcular Desvio Padrão de uma Lista
 def calcular_desvio_padrao(lista_para_calcular_desvio_padrao: List[float]) -> float:
+    
+    # calcular a média
+    media_dos_valores = sum(lista_para_calcular_desvio_padrao) / len(lista_para_calcular_desvio_padrao)
 
+    # calcular a variância
+    variancia_dos_valores = sum((valor - media_dos_valores) ** 2 for valor in lista_para_calcular_desvio_padrao) / len(lista_para_calcular_desvio_padrao)
+    
+    return variancia_dos_valores ** 0.5
 
+print(calcular_desvio_padrao([86, 92, 91, 95, 90, 89, 94]))
 
+# %%
 ### 6. Encontrar Valores Ausentes em uma Sequência
+def localizar_valores_ausentes(lista_de_valores: list[int]) -> list[int]:
+    min_value = min(lista_de_valores)
+    max_value = max(lista_de_valores)
+    full_sequence = set(range(min_value, max_value + 1))
+    return list(full_sequence - set(lista_de_valores))
+    
+localizar_valores_ausentes([1, 2, 3, 5, 6, 9])
