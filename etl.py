@@ -1,4 +1,3 @@
-
 ## Desafio *ETL*
 # Análise de Vendas de Produtos 
 # Objetivo: Dado um arquivo CSV contendo dados de vendas de produtos, o desafio consiste em ler os dados, processá-los em um dicionário para análise e, por fim, filtrar produtos entregues.
@@ -46,7 +45,7 @@ def sum_price_from_filtered_products(delivered_products: list[dict]) -> float:
         total_sum += float(product.get("Price"))
     return total_sum
 
-# Com as funções criadas, posso fazer o encadeamento dos comandos. Isso aqui abaixo vaiser substituído por um novo arquivo (main.py) que vai rodar as funções aqui criadas
+# Com as funções criadas, posso fazer o encadeamento dos comandos. Isso aqui abaixo vai ser substituído por um novo arquivo (main.py) que vai rodar as funções aqui criadas
 '''
     products = csv_reader(file_path)
     products_delivered = filter_products_by_delivery(products)
