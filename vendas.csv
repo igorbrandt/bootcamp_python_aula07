@@ -1,7 +1,8 @@
-Produto,Categoria,Quantidade,Venda
-Notebook,Electronics,5,3000
-Smartphone,Electronics,10,500
-Camiseta,Apparel,20,20
-Cafeteira,Kitchen,3,100
-Tênis,Apparel,10,50
-Tablet,Electronics,2,1500
+Product,Categorie,Quantity,Price,Delivery
+Notebook,Electronics,5,3000,True
+Smartphone,Electronics,10,500,True
+Camiseta,Apparel,20,20,False
+Cafeteira,Kitchen,3,100,True
+Tênis,Apparel,10,50,False
+Tablet,Electronics,2,1500,False
+Carregador-USB,Electronics,10,200,True
