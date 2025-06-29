@@ -8,7 +8,7 @@ import csv
 # Ler os dados do CSV e transformá-los em uma lista de dicts
 def csv_reader(file_name: str) -> list[dict]: 
     '''
-    Função que recebe uma string como nome do CSV e devolve uma lista de dicionários, com o conteúdo dele
+    Função que recebe uma string com o nome do CSV e devolve uma lista de dicionários, com o conteúdo dele
     '''
     with open(file_name, mode="r", encoding="utf-8") as open_file:
         # Cria uma lista em que cada linha do cdv é uma string:
